@@ -18,7 +18,7 @@ class Storage{
     removeItem(itemToRemove) {
         if (this.#items.includes(itemToRemove)) {
             for (let i = 0; i < this.#items.length; i++) {
-                if (this.#items[i].toLowerCase() === itemToRemove.toLowerCase()) {
+                if (this.#items[i] === itemToRemove) {
                     this.#items.splice(i, 1);
                 }
             }
